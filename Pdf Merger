@@ -1,0 +1,7 @@
+This is a simple web-based PDF merging tool called PdfX, designed to allow users to upload and merge multiple PDF files effortlessly.
+ Built using Node.js, Express, Multer, and pdf-merger-js, the tool provides an intuitive interface with Bootstrap styling. 
+Users can select two or more PDF files, upload them through the form, and receive a merged PDF as output. 
+
+This Node.js function, mergePdfs, utilizes the pdf-merger-js library to merge two PDF files. It first creates an instance of PDFMerger, 
+then adds the provided PDF files (p1 and p2) to the merger. The merged PDF is saved to the public/merged.pdf file, making it accessible for download. 
+Additionally, the function deletes the original uploaded PDFs using fs.unlinkSync to free up storage space. This implementation ensures efficient and automated PDF merging for users.
